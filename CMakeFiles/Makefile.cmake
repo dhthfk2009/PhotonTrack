@@ -11,8 +11,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.15.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.15.3/CMakeSystem.cmake"
   "CMakeLists.txt"
-  "exampleB1.in"
-  "exampleB1.out"
+  "exampleMySim.in"
+  "exampleMySim.out"
   "init_vis.mac"
   "run1.mac"
   "run2.mac"
@@ -59,8 +59,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "exampleB1.in"
-  "exampleB1.out"
+  "exampleMySim.in"
+  "exampleMySim.out"
   "init_vis.mac"
   "run1.mac"
   "run2.mac"
@@ -70,6 +70,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/B1.dir/DependInfo.cmake"
-  "CMakeFiles/exampleB1.dir/DependInfo.cmake"
+  "CMakeFiles/MySim.dir/DependInfo.cmake"
+  "CMakeFiles/exampleMySim.dir/DependInfo.cmake"
   )

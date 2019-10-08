@@ -7,11 +7,10 @@
 /run/verbose 2
 #
 # Change the default number of threads (in multi-threaded mode)
-/run/numberOfThreads 4
+#/run/numberOfThreads 4
 #
 # Initialize kernel
 /run/initialize
 #
 # Visualization setting
-/tracking/verbose 1
 /control/execute vis.mac

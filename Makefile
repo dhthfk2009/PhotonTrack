@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.15.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1
+CMAKE_SOURCE_DIR = /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1
+CMAKE_BINARY_DIR = /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1/CMakeFiles /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim/CMakeFiles /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -157,327 +157,219 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named B1
+# Target rules for targets named MySim
 
 # Build rule for target.
-B1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 B1
-.PHONY : B1
+MySim: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MySim
+.PHONY : MySim
 
 # fast build rule for target.
-B1/fast:
-	$(MAKE) -f CMakeFiles/B1.dir/build.make CMakeFiles/B1.dir/build
-.PHONY : B1/fast
+MySim/fast:
+	$(MAKE) -f CMakeFiles/MySim.dir/build.make CMakeFiles/MySim.dir/build
+.PHONY : MySim/fast
 
 #=============================================================================
-# Target rules for targets named exampleB1
+# Target rules for targets named exampleMySim
 
 # Build rule for target.
-exampleB1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exampleB1
-.PHONY : exampleB1
+exampleMySim: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exampleMySim
+.PHONY : exampleMySim
 
 # fast build rule for target.
-exampleB1/fast:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/build
-.PHONY : exampleB1/fast
+exampleMySim/fast:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/build
+.PHONY : exampleMySim/fast
 
-exampleB1.o: exampleB1.cc.o
+exampleMySim.o: exampleMySim.cc.o
 
-.PHONY : exampleB1.o
-
-# target to build an object file
-exampleB1.cc.o:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/exampleB1.cc.o
-.PHONY : exampleB1.cc.o
-
-exampleB1.i: exampleB1.cc.i
-
-.PHONY : exampleB1.i
-
-# target to preprocess a source file
-exampleB1.cc.i:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/exampleB1.cc.i
-.PHONY : exampleB1.cc.i
-
-exampleB1.s: exampleB1.cc.s
-
-.PHONY : exampleB1.s
-
-# target to generate assembly for a file
-exampleB1.cc.s:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/exampleB1.cc.s
-.PHONY : exampleB1.cc.s
-
-src/B1ActionInitialization.o: src/B1ActionInitialization.cc.o
-
-.PHONY : src/B1ActionInitialization.o
+.PHONY : exampleMySim.o
 
 # target to build an object file
-src/B1ActionInitialization.cc.o:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o
-.PHONY : src/B1ActionInitialization.cc.o
+exampleMySim.cc.o:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/exampleMySim.cc.o
+.PHONY : exampleMySim.cc.o
 
-src/B1ActionInitialization.i: src/B1ActionInitialization.cc.i
+exampleMySim.i: exampleMySim.cc.i
 
-.PHONY : src/B1ActionInitialization.i
+.PHONY : exampleMySim.i
 
 # target to preprocess a source file
-src/B1ActionInitialization.cc.i:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.i
-.PHONY : src/B1ActionInitialization.cc.i
+exampleMySim.cc.i:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/exampleMySim.cc.i
+.PHONY : exampleMySim.cc.i
 
-src/B1ActionInitialization.s: src/B1ActionInitialization.cc.s
+exampleMySim.s: exampleMySim.cc.s
 
-.PHONY : src/B1ActionInitialization.s
+.PHONY : exampleMySim.s
 
 # target to generate assembly for a file
-src/B1ActionInitialization.cc.s:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.s
-.PHONY : src/B1ActionInitialization.cc.s
+exampleMySim.cc.s:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/exampleMySim.cc.s
+.PHONY : exampleMySim.cc.s
 
-src/B1DetectorConstruction.o: src/B1DetectorConstruction.cc.o
+src/MySimActionInitialization.o: src/MySimActionInitialization.cc.o
 
-.PHONY : src/B1DetectorConstruction.o
+.PHONY : src/MySimActionInitialization.o
 
 # target to build an object file
-src/B1DetectorConstruction.cc.o:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o
-.PHONY : src/B1DetectorConstruction.cc.o
+src/MySimActionInitialization.cc.o:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimActionInitialization.cc.o
+.PHONY : src/MySimActionInitialization.cc.o
 
-src/B1DetectorConstruction.i: src/B1DetectorConstruction.cc.i
+src/MySimActionInitialization.i: src/MySimActionInitialization.cc.i
 
-.PHONY : src/B1DetectorConstruction.i
+.PHONY : src/MySimActionInitialization.i
 
 # target to preprocess a source file
-src/B1DetectorConstruction.cc.i:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.i
-.PHONY : src/B1DetectorConstruction.cc.i
+src/MySimActionInitialization.cc.i:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimActionInitialization.cc.i
+.PHONY : src/MySimActionInitialization.cc.i
 
-src/B1DetectorConstruction.s: src/B1DetectorConstruction.cc.s
+src/MySimActionInitialization.s: src/MySimActionInitialization.cc.s
 
-.PHONY : src/B1DetectorConstruction.s
+.PHONY : src/MySimActionInitialization.s
 
 # target to generate assembly for a file
-src/B1DetectorConstruction.cc.s:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.s
-.PHONY : src/B1DetectorConstruction.cc.s
+src/MySimActionInitialization.cc.s:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimActionInitialization.cc.s
+.PHONY : src/MySimActionInitialization.cc.s
 
-src/B1EmCalorimeterHit.o: src/B1EmCalorimeterHit.cc.o
+src/MySimDetectorConstruction.o: src/MySimDetectorConstruction.cc.o
 
-.PHONY : src/B1EmCalorimeterHit.o
+.PHONY : src/MySimDetectorConstruction.o
 
 # target to build an object file
-src/B1EmCalorimeterHit.cc.o:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EmCalorimeterHit.cc.o
-.PHONY : src/B1EmCalorimeterHit.cc.o
+src/MySimDetectorConstruction.cc.o:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimDetectorConstruction.cc.o
+.PHONY : src/MySimDetectorConstruction.cc.o
 
-src/B1EmCalorimeterHit.i: src/B1EmCalorimeterHit.cc.i
+src/MySimDetectorConstruction.i: src/MySimDetectorConstruction.cc.i
 
-.PHONY : src/B1EmCalorimeterHit.i
+.PHONY : src/MySimDetectorConstruction.i
 
 # target to preprocess a source file
-src/B1EmCalorimeterHit.cc.i:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EmCalorimeterHit.cc.i
-.PHONY : src/B1EmCalorimeterHit.cc.i
+src/MySimDetectorConstruction.cc.i:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimDetectorConstruction.cc.i
+.PHONY : src/MySimDetectorConstruction.cc.i
 
-src/B1EmCalorimeterHit.s: src/B1EmCalorimeterHit.cc.s
+src/MySimDetectorConstruction.s: src/MySimDetectorConstruction.cc.s
 
-.PHONY : src/B1EmCalorimeterHit.s
+.PHONY : src/MySimDetectorConstruction.s
 
 # target to generate assembly for a file
-src/B1EmCalorimeterHit.cc.s:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EmCalorimeterHit.cc.s
-.PHONY : src/B1EmCalorimeterHit.cc.s
+src/MySimDetectorConstruction.cc.s:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimDetectorConstruction.cc.s
+.PHONY : src/MySimDetectorConstruction.cc.s
 
-src/B1EmCalorimeterSD.o: src/B1EmCalorimeterSD.cc.o
+src/MySimEventAction.o: src/MySimEventAction.cc.o
 
-.PHONY : src/B1EmCalorimeterSD.o
+.PHONY : src/MySimEventAction.o
 
 # target to build an object file
-src/B1EmCalorimeterSD.cc.o:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EmCalorimeterSD.cc.o
-.PHONY : src/B1EmCalorimeterSD.cc.o
+src/MySimEventAction.cc.o:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimEventAction.cc.o
+.PHONY : src/MySimEventAction.cc.o
 
-src/B1EmCalorimeterSD.i: src/B1EmCalorimeterSD.cc.i
+src/MySimEventAction.i: src/MySimEventAction.cc.i
 
-.PHONY : src/B1EmCalorimeterSD.i
+.PHONY : src/MySimEventAction.i
 
 # target to preprocess a source file
-src/B1EmCalorimeterSD.cc.i:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EmCalorimeterSD.cc.i
-.PHONY : src/B1EmCalorimeterSD.cc.i
+src/MySimEventAction.cc.i:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimEventAction.cc.i
+.PHONY : src/MySimEventAction.cc.i
 
-src/B1EmCalorimeterSD.s: src/B1EmCalorimeterSD.cc.s
+src/MySimEventAction.s: src/MySimEventAction.cc.s
 
-.PHONY : src/B1EmCalorimeterSD.s
+.PHONY : src/MySimEventAction.s
 
 # target to generate assembly for a file
-src/B1EmCalorimeterSD.cc.s:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EmCalorimeterSD.cc.s
-.PHONY : src/B1EmCalorimeterSD.cc.s
+src/MySimEventAction.cc.s:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimEventAction.cc.s
+.PHONY : src/MySimEventAction.cc.s
 
-src/B1EventAction.o: src/B1EventAction.cc.o
+src/MySimPrimaryGeneratorAction.o: src/MySimPrimaryGeneratorAction.cc.o
 
-.PHONY : src/B1EventAction.o
+.PHONY : src/MySimPrimaryGeneratorAction.o
 
 # target to build an object file
-src/B1EventAction.cc.o:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o
-.PHONY : src/B1EventAction.cc.o
+src/MySimPrimaryGeneratorAction.cc.o:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimPrimaryGeneratorAction.cc.o
+.PHONY : src/MySimPrimaryGeneratorAction.cc.o
 
-src/B1EventAction.i: src/B1EventAction.cc.i
+src/MySimPrimaryGeneratorAction.i: src/MySimPrimaryGeneratorAction.cc.i
 
-.PHONY : src/B1EventAction.i
+.PHONY : src/MySimPrimaryGeneratorAction.i
 
 # target to preprocess a source file
-src/B1EventAction.cc.i:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EventAction.cc.i
-.PHONY : src/B1EventAction.cc.i
+src/MySimPrimaryGeneratorAction.cc.i:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimPrimaryGeneratorAction.cc.i
+.PHONY : src/MySimPrimaryGeneratorAction.cc.i
 
-src/B1EventAction.s: src/B1EventAction.cc.s
+src/MySimPrimaryGeneratorAction.s: src/MySimPrimaryGeneratorAction.cc.s
 
-.PHONY : src/B1EventAction.s
+.PHONY : src/MySimPrimaryGeneratorAction.s
 
 # target to generate assembly for a file
-src/B1EventAction.cc.s:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EventAction.cc.s
-.PHONY : src/B1EventAction.cc.s
+src/MySimPrimaryGeneratorAction.cc.s:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimPrimaryGeneratorAction.cc.s
+.PHONY : src/MySimPrimaryGeneratorAction.cc.s
 
-src/B1EventAction_original.o: src/B1EventAction_original.cc.o
+src/MySimRunAction.o: src/MySimRunAction.cc.o
 
-.PHONY : src/B1EventAction_original.o
+.PHONY : src/MySimRunAction.o
 
 # target to build an object file
-src/B1EventAction_original.cc.o:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EventAction_original.cc.o
-.PHONY : src/B1EventAction_original.cc.o
+src/MySimRunAction.cc.o:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimRunAction.cc.o
+.PHONY : src/MySimRunAction.cc.o
 
-src/B1EventAction_original.i: src/B1EventAction_original.cc.i
+src/MySimRunAction.i: src/MySimRunAction.cc.i
 
-.PHONY : src/B1EventAction_original.i
+.PHONY : src/MySimRunAction.i
 
 # target to preprocess a source file
-src/B1EventAction_original.cc.i:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EventAction_original.cc.i
-.PHONY : src/B1EventAction_original.cc.i
+src/MySimRunAction.cc.i:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimRunAction.cc.i
+.PHONY : src/MySimRunAction.cc.i
 
-src/B1EventAction_original.s: src/B1EventAction_original.cc.s
+src/MySimRunAction.s: src/MySimRunAction.cc.s
 
-.PHONY : src/B1EventAction_original.s
+.PHONY : src/MySimRunAction.s
 
 # target to generate assembly for a file
-src/B1EventAction_original.cc.s:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EventAction_original.cc.s
-.PHONY : src/B1EventAction_original.cc.s
+src/MySimRunAction.cc.s:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimRunAction.cc.s
+.PHONY : src/MySimRunAction.cc.s
 
-src/B1PrimaryGeneratorAction.o: src/B1PrimaryGeneratorAction.cc.o
+src/MySimSteppingAction.o: src/MySimSteppingAction.cc.o
 
-.PHONY : src/B1PrimaryGeneratorAction.o
+.PHONY : src/MySimSteppingAction.o
 
 # target to build an object file
-src/B1PrimaryGeneratorAction.cc.o:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o
-.PHONY : src/B1PrimaryGeneratorAction.cc.o
+src/MySimSteppingAction.cc.o:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimSteppingAction.cc.o
+.PHONY : src/MySimSteppingAction.cc.o
 
-src/B1PrimaryGeneratorAction.i: src/B1PrimaryGeneratorAction.cc.i
+src/MySimSteppingAction.i: src/MySimSteppingAction.cc.i
 
-.PHONY : src/B1PrimaryGeneratorAction.i
-
-# target to preprocess a source file
-src/B1PrimaryGeneratorAction.cc.i:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.i
-.PHONY : src/B1PrimaryGeneratorAction.cc.i
-
-src/B1PrimaryGeneratorAction.s: src/B1PrimaryGeneratorAction.cc.s
-
-.PHONY : src/B1PrimaryGeneratorAction.s
-
-# target to generate assembly for a file
-src/B1PrimaryGeneratorAction.cc.s:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.s
-.PHONY : src/B1PrimaryGeneratorAction.cc.s
-
-src/B1RunAction.o: src/B1RunAction.cc.o
-
-.PHONY : src/B1RunAction.o
-
-# target to build an object file
-src/B1RunAction.cc.o:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o
-.PHONY : src/B1RunAction.cc.o
-
-src/B1RunAction.i: src/B1RunAction.cc.i
-
-.PHONY : src/B1RunAction.i
+.PHONY : src/MySimSteppingAction.i
 
 # target to preprocess a source file
-src/B1RunAction.cc.i:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunAction.cc.i
-.PHONY : src/B1RunAction.cc.i
+src/MySimSteppingAction.cc.i:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimSteppingAction.cc.i
+.PHONY : src/MySimSteppingAction.cc.i
 
-src/B1RunAction.s: src/B1RunAction.cc.s
+src/MySimSteppingAction.s: src/MySimSteppingAction.cc.s
 
-.PHONY : src/B1RunAction.s
-
-# target to generate assembly for a file
-src/B1RunAction.cc.s:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunAction.cc.s
-.PHONY : src/B1RunAction.cc.s
-
-src/B1RunAction_original.o: src/B1RunAction_original.cc.o
-
-.PHONY : src/B1RunAction_original.o
-
-# target to build an object file
-src/B1RunAction_original.cc.o:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunAction_original.cc.o
-.PHONY : src/B1RunAction_original.cc.o
-
-src/B1RunAction_original.i: src/B1RunAction_original.cc.i
-
-.PHONY : src/B1RunAction_original.i
-
-# target to preprocess a source file
-src/B1RunAction_original.cc.i:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunAction_original.cc.i
-.PHONY : src/B1RunAction_original.cc.i
-
-src/B1RunAction_original.s: src/B1RunAction_original.cc.s
-
-.PHONY : src/B1RunAction_original.s
+.PHONY : src/MySimSteppingAction.s
 
 # target to generate assembly for a file
-src/B1RunAction_original.cc.s:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunAction_original.cc.s
-.PHONY : src/B1RunAction_original.cc.s
-
-src/B1SteppingAction.o: src/B1SteppingAction.cc.o
-
-.PHONY : src/B1SteppingAction.o
-
-# target to build an object file
-src/B1SteppingAction.cc.o:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o
-.PHONY : src/B1SteppingAction.cc.o
-
-src/B1SteppingAction.i: src/B1SteppingAction.cc.i
-
-.PHONY : src/B1SteppingAction.i
-
-# target to preprocess a source file
-src/B1SteppingAction.cc.i:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.i
-.PHONY : src/B1SteppingAction.cc.i
-
-src/B1SteppingAction.s: src/B1SteppingAction.cc.s
-
-.PHONY : src/B1SteppingAction.s
-
-# target to generate assembly for a file
-src/B1SteppingAction.cc.s:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.s
-.PHONY : src/B1SteppingAction.cc.s
+src/MySimSteppingAction.cc.s:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/src/MySimSteppingAction.cc.s
+.PHONY : src/MySimSteppingAction.cc.s
 
 # Help Target
 help:
@@ -491,41 +383,29 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... B1"
-	@echo "... exampleB1"
-	@echo "... exampleB1.o"
-	@echo "... exampleB1.i"
-	@echo "... exampleB1.s"
-	@echo "... src/B1ActionInitialization.o"
-	@echo "... src/B1ActionInitialization.i"
-	@echo "... src/B1ActionInitialization.s"
-	@echo "... src/B1DetectorConstruction.o"
-	@echo "... src/B1DetectorConstruction.i"
-	@echo "... src/B1DetectorConstruction.s"
-	@echo "... src/B1EmCalorimeterHit.o"
-	@echo "... src/B1EmCalorimeterHit.i"
-	@echo "... src/B1EmCalorimeterHit.s"
-	@echo "... src/B1EmCalorimeterSD.o"
-	@echo "... src/B1EmCalorimeterSD.i"
-	@echo "... src/B1EmCalorimeterSD.s"
-	@echo "... src/B1EventAction.o"
-	@echo "... src/B1EventAction.i"
-	@echo "... src/B1EventAction.s"
-	@echo "... src/B1EventAction_original.o"
-	@echo "... src/B1EventAction_original.i"
-	@echo "... src/B1EventAction_original.s"
-	@echo "... src/B1PrimaryGeneratorAction.o"
-	@echo "... src/B1PrimaryGeneratorAction.i"
-	@echo "... src/B1PrimaryGeneratorAction.s"
-	@echo "... src/B1RunAction.o"
-	@echo "... src/B1RunAction.i"
-	@echo "... src/B1RunAction.s"
-	@echo "... src/B1RunAction_original.o"
-	@echo "... src/B1RunAction_original.i"
-	@echo "... src/B1RunAction_original.s"
-	@echo "... src/B1SteppingAction.o"
-	@echo "... src/B1SteppingAction.i"
-	@echo "... src/B1SteppingAction.s"
+	@echo "... MySim"
+	@echo "... exampleMySim"
+	@echo "... exampleMySim.o"
+	@echo "... exampleMySim.i"
+	@echo "... exampleMySim.s"
+	@echo "... src/MySimActionInitialization.o"
+	@echo "... src/MySimActionInitialization.i"
+	@echo "... src/MySimActionInitialization.s"
+	@echo "... src/MySimDetectorConstruction.o"
+	@echo "... src/MySimDetectorConstruction.i"
+	@echo "... src/MySimDetectorConstruction.s"
+	@echo "... src/MySimEventAction.o"
+	@echo "... src/MySimEventAction.i"
+	@echo "... src/MySimEventAction.s"
+	@echo "... src/MySimPrimaryGeneratorAction.o"
+	@echo "... src/MySimPrimaryGeneratorAction.i"
+	@echo "... src/MySimPrimaryGeneratorAction.s"
+	@echo "... src/MySimRunAction.o"
+	@echo "... src/MySimRunAction.i"
+	@echo "... src/MySimRunAction.s"
+	@echo "... src/MySimSteppingAction.o"
+	@echo "... src/MySimSteppingAction.i"
+	@echo "... src/MySimSteppingAction.s"
 .PHONY : help
 
 

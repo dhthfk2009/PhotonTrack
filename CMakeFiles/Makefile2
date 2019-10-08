@@ -44,22 +44,22 @@ RM = /usr/local/Cellar/cmake/3.15.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1
+CMAKE_SOURCE_DIR = /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1
+CMAKE_BINARY_DIR = /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/exampleB1.dir/all
+all: CMakeFiles/exampleMySim.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/B1.dir/clean
-clean: CMakeFiles/exampleB1.dir/clean
+clean: CMakeFiles/MySim.dir/clean
+clean: CMakeFiles/exampleMySim.dir/clean
 
 .PHONY : clean
 
@@ -69,58 +69,58 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/B1.dir
+# Target rules for target CMakeFiles/MySim.dir
 
 # All Build rule for target.
-CMakeFiles/B1.dir/all: CMakeFiles/exampleB1.dir/all
-	$(MAKE) -f CMakeFiles/B1.dir/build.make CMakeFiles/B1.dir/depend
-	$(MAKE) -f CMakeFiles/B1.dir/build.make CMakeFiles/B1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1/CMakeFiles --progress-num= "Built target B1"
-.PHONY : CMakeFiles/B1.dir/all
+CMakeFiles/MySim.dir/all: CMakeFiles/exampleMySim.dir/all
+	$(MAKE) -f CMakeFiles/MySim.dir/build.make CMakeFiles/MySim.dir/depend
+	$(MAKE) -f CMakeFiles/MySim.dir/build.make CMakeFiles/MySim.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim/CMakeFiles --progress-num= "Built target MySim"
+.PHONY : CMakeFiles/MySim.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/B1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1/CMakeFiles 12
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/B1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1/CMakeFiles 0
-.PHONY : CMakeFiles/B1.dir/rule
+CMakeFiles/MySim.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MySim.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim/CMakeFiles 0
+.PHONY : CMakeFiles/MySim.dir/rule
 
 # Convenience name for target.
-B1: CMakeFiles/B1.dir/rule
+MySim: CMakeFiles/MySim.dir/rule
 
-.PHONY : B1
+.PHONY : MySim
 
 # clean rule for target.
-CMakeFiles/B1.dir/clean:
-	$(MAKE) -f CMakeFiles/B1.dir/build.make CMakeFiles/B1.dir/clean
-.PHONY : CMakeFiles/B1.dir/clean
+CMakeFiles/MySim.dir/clean:
+	$(MAKE) -f CMakeFiles/MySim.dir/build.make CMakeFiles/MySim.dir/clean
+.PHONY : CMakeFiles/MySim.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/exampleB1.dir
+# Target rules for target CMakeFiles/exampleMySim.dir
 
 # All Build rule for target.
-CMakeFiles/exampleB1.dir/all:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/depend
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target exampleB1"
-.PHONY : CMakeFiles/exampleB1.dir/all
+CMakeFiles/exampleMySim.dir/all:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/depend
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target exampleMySim"
+.PHONY : CMakeFiles/exampleMySim.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/exampleB1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1/CMakeFiles 12
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exampleB1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1/CMakeFiles 0
-.PHONY : CMakeFiles/exampleB1.dir/rule
+CMakeFiles/exampleMySim.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exampleMySim.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim/CMakeFiles 0
+.PHONY : CMakeFiles/exampleMySim.dir/rule
 
 # Convenience name for target.
-exampleB1: CMakeFiles/exampleB1.dir/rule
+exampleMySim: CMakeFiles/exampleMySim.dir/rule
 
-.PHONY : exampleB1
+.PHONY : exampleMySim
 
 # clean rule for target.
-CMakeFiles/exampleB1.dir/clean:
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/clean
-.PHONY : CMakeFiles/exampleB1.dir/clean
+CMakeFiles/exampleMySim.dir/clean:
+	$(MAKE) -f CMakeFiles/exampleMySim.dir/build.make CMakeFiles/exampleMySim.dir/clean
+.PHONY : CMakeFiles/exampleMySim.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

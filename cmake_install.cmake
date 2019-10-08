@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1
+# Install script for directory: /Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,14 +33,14 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1/exampleB1")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim/exampleMySim")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleMySim" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleMySim")
     execute_process(COMMAND /usr/bin/install_name_tool
       -delete_rpath "/usr/local/Geant4/lib"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB1")
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleMySim")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB1")
+      execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleMySim")
     endif()
   endif()
 endif()
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/B1/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ohsora/Geant4/geant4.10.03.p03/examples/basic/MySim/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
